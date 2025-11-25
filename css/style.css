@@ -1,0 +1,178 @@
+/* ----------------------------------------------
+   GLOBAL VARIABLES (Light + Dark Theme)
+---------------------------------------------- */
+
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --subtext: #555;
+  --accent: #ffd34b;
+  --card: #fafafa;
+  --border: #e2e2e2;
+  --muted: #999;
+  --link: #1a73e8;
+}
+
+[data-theme="dark"] {
+  --bg: #0e0e0f;
+  --text: #e6e6e6;
+  --subtext: #bfbfbf;
+  --card: #1a1a1a;
+  --border: #333;
+  --muted: #777;
+  --accent: #f5c34a;
+  --link: #4d9aff;
+}
+
+/* Smooth Theme Transition */
+html, body, * {
+  transition: background-color .35s ease, color .35s ease, border-color .35s ease;
+}
+
+/* ----------------------------------------------
+   GLOBAL STYLING
+---------------------------------------------- */
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a { color: var(--link); text-decoration: none; }
+
+h1, h2, h3 { font-family: "Cairo", sans-serif; margin: 0 0 10px; }
+
+img { max-width: 100%; display: block; border-radius: 10px; }
+
+/* Container */
+.container {
+  width: min(1200px, 95%);
+  margin: auto;
+  padding-bottom: 60px;
+}
+
+/* ----------------------------------------------
+   HEADER
+---------------------------------------------- */
+
+.site-header {
+  background: var(--accent);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #eec443;
+}
+
+.branding .site-title a {
+  font-size: 28px;
+  font-weight: 700;
+  color: #000;
+}
+
+.branding .sub {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Social Links */
+.social a {
+  margin: 0 8px;
+  font-size: 22px;
+  color: #000;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ----------------------------------------------
+   THEME TOGGLE SWITCH
+---------------------------------------------- */
+
+.theme-toggle {
+  width: 58px;
+  height: 28px;
+  background: var(--card);
+  border-radius: 30px;
+  border: 2px solid var(--muted);
+  cursor: pointer;
+  position: relative;
+  transition: all .3s ease;
+}
+
+.theme-toggle::after {
+  content: "";
+  width: 22px;
+  height: 22px;
+  background: var(--accent);
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform .3s ease, background .3s ease;
+}
+
+[data-theme="dark"] .theme-toggle::after {
+  transform: translateX(28px);
+  background: #fff;
+}
+
+/* RTL Toggle */
+.lang-toggle {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* ----------------------------------------------
+   HERO SECTION
+---------------------------------------------- */
+
+.hero img {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin: 20px 0;
+}
+
+/* ----------------------------------------------
+   INTRO SECTION
+---------------------------------------------- */
+
+.intro {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.intro p {
+  color: var(--subtext);
+}
+
+/* ----------------------------------------------
+   SEARCH + BUTTON ROW
+---------------------------------------------- */
+
+.controls-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.controls-row input {
+  padding: 10px 15px;
+  width: 250px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  backgro
