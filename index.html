@@ -1,48 +1,110 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Arab Style – Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Arab Style — Home</title>
+  <meta name="description" content="The Arab Style — Islamic travel vlogs, Umrah guides, Madinah & Makkah tours. Playlists, videos and blog/SEO content." />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Main CSS -->
   <link rel="stylesheet" href="css/style.css">
-  <!-- Google Font for Arabic support -->
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Font Awesome for social icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Main JS (deferred) -->
+  <script defer src="js/main.js"></script>
+  <!-- FontAwesome for icons -->
+  <script src="https://kit.fontawesome.com/a2d9f3a5b8.js" crossorigin="anonymous" defer></script>
 </head>
 <body>
-  <header>
-    <h1>The Arab Style</h1>
-    <nav class="social-contact">
-      <div class="social-icons">
-        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
-        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+  <!-- SITE HEADER -->
+  <header class="site-header" role="banner">
+    <div class="branding">
+      <h1 class="site-title"><a href="index.html">The Arab Style</a></h1>
+      <div class="sub">Authentic Islamic travel vlogs & guides</div>
+    </div>
+
+    <div class="header-controls">
+      <div class="social">
+        <a href="https://facebook.com/profile.php?id=100082695695672&mibextid=ZbWKwL" target="_blank" rel="noopener" aria-label="facebook">
+          <i class="fab fa-facebook-square"></i><span class="sr"> Facebook</span>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="youtube">
+          <i class="fab fa-youtube"></i><span class="sr"> YouTube</span>
+        </a>
+        <a href="https://instagram.com/vlogs_in_saudi_arabia?igshid=ZDdkNTZiNTM=" target="_blank" rel="noopener" aria-label="instagram">
+          <i class="fab fa-instagram"></i><span class="sr"> Instagram</span>
+        </a>
       </div>
-      <div class="contact-info">
-        <span>Email: info@thearabstyle.com</span>
-        <span>Phone: +966-123-456-789</span>
+
+      <div class="prefs">
+        <!-- fancy toggle styled in CSS; JS handles toggling -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.76 4.84l-1.8-1.79L3.17 4.84l1.79 1.79 1.8-1.79zM1 13h3v-2H1v2zm10 9h2v-3h-2v3zm9-9v2h3v-2h-3zM17.24 19.16l1.79 1.79 1.79-1.79-1.79-1.79-1.79 1.79zM6.76 19.16l1.79-1.79-1.79-1.79-1.79 1.79 1.79 1.79zM12 6a6 6 0 100 12A6 6 0 0012 6z"/></svg>
+          <span class="sr">Theme</span>
+        </button>
+        <button id="lang-toggle" class="lang-toggle" aria-label="Toggle language/RTL" title="Toggle Arabic/LTR">ع/En</button>
       </div>
-    </nav>
+    </div>
   </header>
 
-  <!-- Hero Image -->
+  <!-- HERO (uses uploaded local path; replace with images/hero.png if you rename/upload) -->
   <section class="hero">
-    <img src="images/hero.png" alt="Boy filming in traditional attire">
+    <img class="fade-in" id="hero-img" src="/mnt/data/Generated Image November 23, 2025 - 5_36PM.png" alt="Hero — boy filming in traditional attire (The Arab Style)">
   </section>
 
-  <main>
-    <section id="playlists">
-      <h2>Playlists</h2>
-      <ul>
-        <li><a href="muslims-corner.html">Muslim’s Corner</a></li>
-        <!-- Additional playlists can be added here -->
-      </ul>
+  <!-- MAIN CONTENT -->
+  <main class="container" id="main" role="main">
+    <!-- Intro -->
+    <section class="intro fade-in">
+      <h2>Welcome to The Arab Style</h2>
+      <p>Explore curated playlists, detailed Umrah guides, and travel vlogs from Madinah, Makkah and Saudi Arabia. Click any playlist to view its videos and read full descriptions.</p>
+    </section>
+
+    <!-- Controls -->
+    <section class="controls-row fade-in" aria-label="search and shortcuts">
+      <input id="search" type="search" placeholder="Search playlists or videos..." aria-label="Search videos">
+      <a class="btn primary" href="playlists/muslims-corner.html">Open Muslim’s Corner playlist</a>
+    </section>
+
+    <!-- Playlists Grid -->
+    <section class="playlists-grid" id="playlistsGrid" aria-live="polite">
+      <!-- Playlist card: Muslim's Corner -->
+      <article class="playlist-card fade-in" data-keywords="madinah umrah madina travel pilgrimage">
+        <img src="https://img.youtube.com/vi/fmcEjr65mPU/hqdefault.jpg" alt="Muslim's Corner thumbnail">
+        <div class="card-body">
+          <h3><a href="playlists/muslims-corner.html">Muslim’s Corner</a></h3>
+          <p>Travel vlogs, Umrah guides & Madinah tours — curated for pilgrims and visitors (2025).</p>
+          <div class="meta">Videos: 3 • Updated: 2025</div>
+        </div>
+      </article>
+
+      <!-- Placeholder for future playlists -->
+      <article class="playlist-card empty fade-in">
+        <div class="card-body">
+          <h3>Add new playlist</h3>
+          <p>Send playlist name, video links and SEO keywords and I will add it.</p>
+          <div class="meta">Ready</div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta fade-in">
+      <p>Contact: <a href="mailto:ayaanaamir170@gmail.com">ayaanaamir170@gmail.com</a></p>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 The Arab Style. All rights reserved.</p>
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <p>&copy; 2025 The Arab Style — All rights reserved.</p>
+      <small>Made for GitHub Pages. See README for deployment notes.</small>
+    </div>
   </footer>
+
+  <!-- Accessibility: hide text visually but keep for screen readers -->
+  <style>
+    .sr { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+  </style>
 </body>
 </html>
+
