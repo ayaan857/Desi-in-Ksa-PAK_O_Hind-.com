@@ -1,122 +1,95 @@
 <!doctype html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>The Arab Style — Home</title>
-  <meta name="description" content="The Arab Style — Islamic travel vlogs, Hajj & Umrah guides, Madinah & Makkah journeys.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Arab Style — Official Website</title>
 
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- Main CSS -->
   <link rel="stylesheet" href="css/style.css">
-
-  <!-- Main JS (deferred) -->
   <script defer src="js/main.js"></script>
-
-  <!-- Font Awesome (icons) -->
   <script src="https://kit.fontawesome.com/a2d9f3a5b8.js" crossorigin="anonymous" defer></script>
 </head>
 
 <body>
-  <!-- SITE HEADER -->
-  <header class="site-header" role="banner">
-    <div class="header-inner container-flex">
-      <div class="branding">
-        <a class="logo" href="index.html">
-          <h1>The Arab Style</h1>
-        </a>
-        <div class="sub">Islamic Travel • Vlogs • Guides</div>
+
+<header class="site-header">
+  <div class="header-inner container-flex">
+    <div class="branding">
+      <a class="logo" href="index.html"><h1>The Arab Style</h1></a>
+      <div class="sub">Saudi Arabia Vlogs & Informative Guides</div>
+    </div>
+
+    <div class="header-right">
+      <a class="contact-link" href="mailto:ayaanaamir170@gmail.com">
+        <i class="fas fa-envelope"></i> ayaanaamir170@gmail.com
+      </a>
+
+      <div class="social">
+        <a href="https://facebook.com/profile.php?id=100082695695672&mibextid=ZbWKwL"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+        <a href="https://instagram.com/vlogs_in_saudi_arabia?igshid=ZDdkNTZiNTM="><i class="fab fa-instagram"></i></a>
       </div>
 
-      <div class="header-right">
-        <div class="contact-info">
-          <a href="mailto:ayaanaamir170@gmail.com" class="contact-link"><i class="fas fa-envelope"></i><span>ayaanaamir170@gmail.com</span></a>
-        </div>
+      <button id="theme-toggle" class="theme-toggle"></button>
+      <button id="lang-toggle" class="lang-toggle">ع / En</button>
+    </div>
+  </div>
+</header>
 
-        <div class="social">
-          <a href="https://facebook.com/profile.php?id=100082695695672&mibextid=ZbWKwL" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
-          <a href="https://www.youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-          <a href="https://instagram.com/vlogs_in_saudi_arabia?igshid=ZDdkNTZiNTM=" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        </div>
+<!-- HERO -->
+<section class="hero container fade-in">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <h2>Welcome to The Arab Style</h2>
+      <p>Your gateway to Saudi Arabia vlogs, travel guides, Umrah tutorials, and Hajj 2025 updates.</p>
 
-        <div class="prefs">
-          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme"></button>
-          <button id="lang-toggle" class="lang-toggle" aria-label="Toggle Arabic/LTR">ع / En</button>
-        </div>
+      <div class="hero-cta">
+        <a class="btn primary" href="playlists/muslims-corner.html">Explore Playlist</a>
+        <a class="btn ghost" href="playlists/hajj-updates-2025.html">Hajj 2025 Updates</a>
       </div>
     </div>
-  </header>
 
-  <!-- HERO -->
-  <section class="hero container">
-    <div class="hero-inner">
-      <div class="hero-text fade-in">
-        <h2>Travel. Faith. Stories.</h2>
-        <p>Real vlogs and guides from Madinah, Makkah and Saudi Arabia — Umrah & Hajj coverage, tips and experiences (2025).</p>
-        <div class="hero-cta">
-          <a class="btn primary" href="playlists/muslims-corner.html">Open Muslim’s Corner</a>
-          <a class="btn ghost" href="playlists/hajj-updates-2025.html">Hajj Updates 2025</a>
-        </div>
-      </div>
-
-      <div class="hero-media fade-in">
-        <img src="images/hero.png" alt="The Arab Style — hero" />
-      </div>
+    <div class="hero-media">
+      <img src="https://i.ibb.co/sKxSt2f/makkah.jpg" alt="Makkah Image">
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- PLAYLISTS SECTION -->
-  <main class="container">
-    <section class="section-heading fade-in">
-      <h3>Playlists</h3>
-      <p class="muted">Explore our curated playlists — click any card to open the playlist page.</p>
-    </section>
+<!-- PLAYLISTS -->
+<section class="container fade-in">
+  <div class="section-heading">
+    <h2>Playlists</h2>
+  </div>
 
-    <section class="playlists-grid fade-in">
+  <div class="playlists-grid">
 
-      <!-- Muslim's Corner (card) -->
-      <article class="playlist-card">
-        <a class="playlist-link" href="playlists/muslims-corner.html">
-          <img class="playlist-thumb" src="https://img.youtube.com/vi/fmcEjr65mPU/maxresdefault.jpg" alt="Muslim's Corner thumbnail">
-          <div class="playlist-body">
-            <h4>Muslim’s Corner</h4>
-            <p class="muted">Umrah guides, Madinah & Makkah vlogs, spiritual journeys (2025)</p>
-            <div class="meta">3 videos</div>
-          </div>
-        </a>
-      </article>
-
-      <!-- Hajj Updates 2025 (card) -->
-      <article class="playlist-card">
-        <a class="playlist-link" href="playlists/hajj-updates-2025.html">
-          <img class="playlist-thumb" src="https://img.youtube.com/vi/VCMTYHuRyeo/maxresdefault.jpg" alt="Hajj Updates thumbnail">
-          <div class="playlist-body">
-            <h4>Hajj Updates 2025</h4>
-            <p class="muted">Live updates, verified reports, and essential information for pilgrims.</p>
-            <div class="meta">3 videos</div>
-          </div>
-        </a>
-      </article>
-
-    </section>
-
-    <!-- CONTACT CTA -->
-    <section class="contact-cta fade-in">
-      <p>Questions or partnership inquiry? <a href="mailto:ayaanaamir170@gmail.com">ayaanaamir170@gmail.com</a></p>
-    </section>
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-inner">
-        <p>&copy; 2025 The Arab Style. All rights reserved.</p>
-        <small class="muted">Built for GitHub Pages • Responsive • Dark/Light mode</small>
+    <a class="playlist-card" href="playlists/muslims-corner.html">
+      <img class="playlist-thumb" src="https://i.ibb.co/pjGLdGN/muslims-corner.jpg">
+      <div class="playlist-body">
+        <h4>Muslim’s Corner</h4>
+        <p class="muted">Islamic content • Umrah Guide • Makkah & Madinah</p>
       </div>
-    </div>
-  </footer>
+    </a>
+
+    <a class="playlist-card" href="playlists/hajj-updates-2025.html">
+      <img class="playlist-thumb" src="https://i.ibb.co/fHnC1kT/hajj-updates.jpg">
+      <div class="playlist-body">
+        <h4>Hajj 2025 Updates</h4>
+        <p class="muted">Live news • Mina • Arafat • Muzdalifa</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>&copy; 2025 The Arab Style</p>
+  </div>
+</footer>
+
 </body>
 </html>
+
 
