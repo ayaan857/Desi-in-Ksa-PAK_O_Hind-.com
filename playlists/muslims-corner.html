@@ -1,105 +1,81 @@
 <!doctype html>
 <html lang="en" dir="ltr">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Muslim’s Corner — The Arab Style</title>
-    <meta name="description"
-        content="Islamic playlist including Madinah vlog, Umrah guide, Kabah views and more.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Muslim’s Corner — The Arab Style</title>
 
-    <!-- Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Inter:wght@300;400;600&display=swap"
-        rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css">
-
-    <!-- JS -->
-    <script defer src="../js/main.js"></script>
-
-    <!-- Icons -->
-    <script src="https://kit.fontawesome.com/a2d9f3a5b8.js" crossorigin="anonymous" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script defer src="../js/main.js"></script>
+  <script src="https://kit.fontawesome.com/a2d9f3a5b8.js" crossorigin="anonymous" defer></script>
 </head>
 
 <body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner container-flex">
+      <div class="branding">
+        <a class="logo" href="../index.html"><h1>The Arab Style</h1></a>
+        <div class="sub">Muslim's Corner</div>
+      </div>
 
-    <!-- HEADER -->
-    <header class="site-header">
-        <div class="branding">
-            <h1 class="site-title"><a href="../index.html">The Arab Style</a></h1>
-            <div class="sub">Muslim's Corner Playlist</div>
+      <div class="header-right">
+        <a class="contact-link" href="mailto:ayaanaamir170@gmail.com"><i class="fas fa-envelope"></i> ayaanaamir170@gmail.com</a>
+
+        <div class="social">
+          <a href="https://facebook.com/profile.php?id=100082695695672&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://instagram.com/vlogs_in_saudi_arabia?igshid=ZDdkNTZiNTM=" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
 
-        <div class="header-controls">
-
-            <div class="contact-info">
-                <a href="mailto:ayaanaamir170@gmail.com"><i class="fas fa-envelope"></i> ayaanaamir170@gmail.com</a>
-            </div>
-
-            <div class="social">
-                <a href="https://facebook.com/profile.php?id=100082695695672&mibextid=ZbWKwL" target="_blank"><i
-                        class="fab fa-facebook-square"></i></a>
-                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
-                <a href="https://instagram.com/vlogs_in_saudi_arabia?igshid=ZDdkNTZiNTM=" target="_blank"><i
-                        class="fab fa-instagram"></i></a>
-            </div>
-
-            <div class="prefs">
-                <button id="theme-toggle" class="theme-toggle"></button>
-                <button id="lang-toggle" class="lang-toggle">ع / En</button>
-            </div>
-
-        </div>
-    </header>
-
-    <!-- TITLE -->
-    <section class="intro fade-in">
-        <h2>Muslim’s Corner</h2>
-        <p>Islamic content, Madinah vlogs, Umrah guide, Kabah views & more.</p>
-    </section>
-
-
-    <!-- SEARCH -->
-    <div class="controls-row fade-in">
-        <input type="text" id="searchInput" placeholder="Search videos...">
+        <button id="theme-toggle" class="theme-toggle"></button>
+        <button id="lang-toggle" class="lang-toggle">ع / En</button>
+      </div>
     </div>
+  </header>
 
+  <main class="container fade-in">
+    <h2 style="margin-top:30px;">Muslim’s Corner Playlist</h2>
+    <p class="muted">Explore Madinah, Umrah tips, and spiritual vlogs.</p>
 
-    <!-- VIDEO GRID WITH THUMBNAILS -->
-    <section class="videos-grid fade-in">
+    <input id="searchInput" type="text" placeholder="Search videos…">
 
-        <!-- MADINAH -->
-        <a class="video-tile" href="../videos/madinah-explore.html">
-            <img src="https://img.youtube.com/vi/fmcEjr65mPU/maxresdefault.jpg" alt="Madinah Vlog Thumbnail">
-            <h3>Explore Madinah 2025</h3>
-            <p>Madinah vlog • Masjid Nabawi • Rawdah • Salam Gate</p>
-        </a>
+    <section class="playlists-grid">
 
-        <!-- UMRAH GUIDE -->
-        <a class="video-tile" href="../videos/umrah-guide.html">
-            <img src="https://img.youtube.com/vi/FEDZg7monuE/maxresdefault.jpg" alt="Umrah Guide Thumbnail">
-            <h3>Complete Umrah Guide 2025</h3>
-            <p>Your full step-by-step Umrah guide.</p>
-        </a>
+      <a class="video-tile playlist-card" href="../videos/madinah-explore.html">
+        <img class="playlist-thumb" src="https://img.youtube.com/vi/fmcEjr65mPU/maxresdefault.jpg">
+        <div class="playlist-body">
+          <h4>Madinah 2025</h4>
+          <p class="muted">Explore Masjid Nabawi & Rawdah.</p>
+        </div>
+      </a>
 
-        <!-- KABAH VIEW -->
-        <a class="video-tile" href="../videos/kabah-view.html">
-            <img src="https://img.youtube.com/vi/z4OkHqu1KsA/maxresdefault.jpg" alt="Kabah View Thumbnail">
-            <h3>Kabah View Vlog 2025</h3>
-            <p>Peaceful vlog showing Kabah views & atmosphere.</p>
-        </a>
+      <a class="video-tile playlist-card" href="../videos/umrah-guide.html">
+        <img class="playlist-thumb" src="https://img.youtube.com/vi/FEDZg7monuE/maxresdefault.jpg">
+        <div class="playlist-body">
+          <h4>Complete Umrah Guide 2025</h4>
+          <p class="muted">Step-by-step Umrah guide.</p>
+        </div>
+      </a>
+
+      <a class="video-tile playlist-card" href="../videos/kabah-view.html">
+        <img class="playlist-thumb" src="https://img.youtube.com/vi/z4OkHqu1KsA/maxresdefault.jpg">
+        <div class="playlist-body">
+          <h4>Kabah View Vlog</h4>
+          <p class="muted">Peaceful experience from Makkah.</p>
+        </div>
+      </a>
 
     </section>
+  </main>
 
-
-    <!-- FOOTER -->
-    <footer class="site-footer">
-        <p>&copy; 2025 The Arab Style — Muslim’s Corner</p>
-    </footer>
-
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2025 The Arab Style</p>
+    </div>
+  </footer>
 </body>
-
 </html>
+
 
